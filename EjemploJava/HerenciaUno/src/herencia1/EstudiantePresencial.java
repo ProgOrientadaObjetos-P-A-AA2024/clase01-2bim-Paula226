@@ -44,7 +44,13 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        return nombresEstudiante;
+        String cadena = String.format("Nombre: %s\n"
+                + "Costo Matricula: %2.f\n",
+                nombresEstudiante,
+                matriculaPresencial);
+        return cadena;
+        
     }
     
 }
+// se realiza eso para que en un ejecutor no estar reescribiendo todo el toString
